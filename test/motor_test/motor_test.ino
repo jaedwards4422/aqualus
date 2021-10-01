@@ -11,13 +11,13 @@ void setup() {
 }
 
 void loop() {
-  // test if motor runs. first backwards then forwards.
+  // test if motor runs. first backwards, pause 1s, then forwards.
   digitalWrite(OUT1,HIGH);
   digitalWrite(OUT2,LOW);
   analogWrite(ENA,255);
   delay(2000);
 
-  digitalWrite(OUT1,LOW);
+  digitalWrite(OUT1,LOW); 
   digitalWrite(OUT2,LOW);
   analogWrite(ENA,0);
   delay(1000);
