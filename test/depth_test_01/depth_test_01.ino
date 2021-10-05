@@ -17,6 +17,8 @@ void setup() {
     Serial.println("\n\n\n");
     delay(5000);}
 
+  sensor.setModel(MS5837::MS5837_30BA);
+  sensor.setFluidDensity(997);// kg/m^3 (freshwater, 1029 for seawater)
 
 }
 
@@ -27,4 +29,4 @@ void loop() {
   Serial.print("\n");
   delay(50);
 }
-  // put your main code here, to run repeatedly:
+ 
